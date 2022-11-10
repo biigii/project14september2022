@@ -1,10 +1,5 @@
-function submit() {
-  var input = document.querySelector('[data-input]');
-  var value = input.value;
-  var ul = document.querySelector('[data-list]');
-
-  var li = document.createElement('li');
-  li.textContent = value;
-  ul.appendChild(li);
-  document.querySelector('[data-input]').value = ""
+function getText() {
+  var value = document.querySelector('[type="text"]').value;
+  var h1 = document.querySelector('h1')
+  h1.textContent = value;
 }
